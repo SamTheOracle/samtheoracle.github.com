@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+section {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #6d6d64, #536878);
+    background-size: 700% 700%;
+    position: absolute;
+    animation: bg-animation 7.5s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+box {
+    color: #fff;
+    background: rgba(255, 255, 255, .2);
+    padding: 1.5vw;
+    border-radius: 10px;
+    text-align: center;
+    width: 75%;
+    display: block;
+    position: inherit;
+    top: 40%;
+}
+.icon_holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.icon_image{
+    max-width: 100px;
+    max-height: 100px;
+    margin: 20px;
+}
+
+.lp_title {
+    font-size: 5.5vw;
+    font-family: 'JetBrains Mono', sans-serif;
+}
+
+.lp_subtitle {
+    font-size: 3.5vw;
+    font-family: 'JetBrains Mono', sans-serif;
+}
+
+.typewriter {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: text-forward 5s ease-in-out alternate 1;
+}
+
+
+@keyframes cursor {
+
+    0%,
+    100% {
+        border-right: 4px solid #fff;
+    }
+}
+
+@keyframes text-forward {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+
+}
+
+@keyframes start {
+
+    100% {
+        top: 10%;
+    }
+
+}
