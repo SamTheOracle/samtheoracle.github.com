@@ -57,7 +57,7 @@ box {
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
-    animation: text-forward 5s ease-in-out alternate 1;
+    animation: text-forward 2.5s ease-in-out alternate 1;
 }
 
 
