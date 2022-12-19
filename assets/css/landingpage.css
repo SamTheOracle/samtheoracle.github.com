@@ -6,10 +6,17 @@
     padding: 0;
     outline: 0;
 }
+
+.body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
 section {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to right, #6d6d64, #536878);
+    background: #003241;
     background-size: 700% 700%;
     position: absolute;
     animation: bg-animation 7.5s ease-in-out infinite;
@@ -30,14 +37,25 @@ box {
     position: inherit;
     top: 40%;
 }
-.icon_holder{
+
+.icon_holder {
     display: flex;
     align-items: center;
     justify-content: center;
-    visibility: hidden;
+    position: absolute;
+/*     top: 130%;
+ */    visibility: hidden;
 }
 
-.icon_image{
+.responsive_image {
+    max-width: 700px;
+    height: auto;
+    position: absolute;
+    top: 130%;
+    border-radius: 5%;
+}
+
+.icon_image {
     max-width: 100px;
     max-height: 100px;
     margin: 20px;
@@ -100,4 +118,10 @@ box {
         top: 10%;
     }
 
+}
+
+@keyframes center {
+    100% {
+        top: 45%
+    }
 }
