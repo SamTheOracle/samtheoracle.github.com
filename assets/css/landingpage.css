@@ -49,6 +49,8 @@ box {
 
 .icon_image {
     color: white;
+    width: 40px;
+    height: auto;
 }
 
 .responsive_image {
