@@ -7,10 +7,11 @@
     outline: 0;
 }
 
-.body {
+html,
+body {
     margin: 0;
     height: 100%;
-    overflow: hidden;
+    overflow: hidden
 }
 
 section {
@@ -28,8 +29,9 @@ section {
 
 box {
     color: #fff;
-/*     background: rgba(255, 255, 255, .2);
- */    padding: 1.5vw;
+    /*     background: rgba(255, 255, 255, .2);
+ */
+    padding: 1.5vw;
     border-radius: 10px;
     text-align: center;
     width: 50%;
@@ -162,9 +164,10 @@ box {
             top: 25%
         }
     }
+
     @keyframes end {
-        100%{
-            top:70%
+        100% {
+            top: 70%
         }
     }
 }
